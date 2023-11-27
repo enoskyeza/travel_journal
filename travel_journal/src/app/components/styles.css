@@ -9,4 +9,13 @@ nav{
     align-items: center;
     justify-content: center;
     gap: 15px;
+    color: black;
+}
+
+footer{
+    background: rgb(255, 106, 0);
+    padding: 15px;
+    gap: 15px;
+    color: black;
+    text-align: center;
 }
