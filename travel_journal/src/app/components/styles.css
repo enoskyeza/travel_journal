@@ -33,8 +33,6 @@ footer{
     margin-right: 50px;
     margin-bottom: 30px;
     padding-bottom: 30px;
-    display: flex;
-    gap: 20px;
 }
 
 .place-content:not(:last-of-type) {
@@ -42,8 +40,13 @@ footer{
 }
 
 .place-content img {
-    width: 300px;
+    width: 100%;
     border-radius: 8px;
+    transition: transform 0.5s ease;
+}
+
+.place-content img:hover {
+    transform: scale(1.02, 1.02);
 }
 
 
@@ -52,6 +55,10 @@ footer{
     align-items: center;
     margin-bottom: 10px;
     margin-top: 10px;
+}
+
+.place-directions a{
+    text-decoration: underline;
 }
 
 .country {
@@ -75,3 +82,12 @@ footer{
     text-align: justify;
 }
 
+@media screen and (min-width:700px) {
+    .place-content {
+        display: flex;
+        gap: 20px;
+    }
+    .place-content img {
+        width: 300px;
+    }
+}
