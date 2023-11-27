@@ -5,10 +5,15 @@ import Destination from "./Destination";
 
 
 export default function Main() {
+    const places = data.map(place => {
+        return <Destination
+        key = {place.id}
+        {...place} />
+    })
     return(
         <>
         <Nav />
-        <Destination />
+        {places}
         <Footer />
         </>
     )
