@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background: rgb(22, 22, 22);
+}
+
 
 nav{
     background: rgb(255, 106, 0);
@@ -39,4 +43,31 @@ footer{
 
     /* display: flex; */
 
+}
+
+.place-directions {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.country {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+.place-content-right h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.period {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.place-content-right p {
+    text-align: justify;
 }

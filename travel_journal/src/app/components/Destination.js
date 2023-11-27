@@ -8,12 +8,12 @@ export default function Destination(props) {
       <div className="place-content-right">
         <div className="place-directions">
           <FaLocationDot />
-          <p>{props.country}</p>
-          <a href={props.map}>View on Google Maps</a>
+          <h4 className="country">{props.country}</h4>
+          <a href={props.map}><small>View on Google Maps</small></a>
         </div>
         <h2>{props.place}</h2>
-        <h6>{props.period}</h6>
-        <p>{props.description}</p>
+        <h4 className="period">{props.period}</h4>
+        <p><small>{props.description}</small></p>
       </div>
     </div>
   );
