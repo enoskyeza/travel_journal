@@ -13,12 +13,6 @@ export default function Blog() {
       .catch(error => console.error('Error fetching posts:', error));
   }, []);
 
-  if(posts.length) {
-      console.log('POSTS AVAILABLE')
-  } else {
-      console.log('NO POSTS AVAILABLE')
-  }
-
   return (
     <>
       <div>
